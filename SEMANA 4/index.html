@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+    <link rel="stylesheet" href="CSS/CONTACTO.css">
+</head>
+<body style="background-color: black (226, 216, 216, 0.952);">
+    <header>
+        <img src="img/incap.png" width="100" height="100" alt="incap">
+        <h1>LISTA EN HTML</h1>
+        <h2>MENU DE NAVEGACION</h2>
+    </header>
+<nav>
+<ul>
+    <li type="disc" style="color: red;">HOME</li>
+    <li type="square">productos</li>
+    <li type="circle">servicios</li>
+    <li>contacto</li>
+</ul>
+</nav>
+<section>
+    <!-- method GET pasa los datos por la url, atravez de parametros// Method POST pasa los datos de forma interna(no se ven) -->
+    <form action="datos.php" method="post">
+        <!-- seccion de marco de formulario -->
+        <fieldset>
+            <!-- seccion de ingreso de nombre -->
+            <label>NOMBRE COMPLETO</label>
+            <input name="email" type="email"placeholder="ingreso de email" required="">
+            <br><br>
+            <!-- seccion contraseña -->
+            <label>contraseña</label>
+            <input name="contraseña" type="password" placeholder="ingrese su contraseña"
+            require="">
+            <br><br>
+
+            <!-- seccion hobbies -->
+            <label>selecciona tu hobbies</label>
+            <br>
+                <input name="cine" type="checkbox">cine <br>
+                <input name="lectura" type="checkbox">lectura <br>
+                <input name="deporte" type="checkbox">deporte <br>
+            <br>
+            <br>
+
+            <!-- estado civil -->
+
+            <label>estado civil</label><br>
+            <input name="estcivil" type="radio" value="casado">casada(a) <br>
+            <input name="estcivil" type="radio" value="soltero">soltero(a) <br>
+            <input name="estcivil" type="radio" value="viudo">viudo(a) <br>
+            <br><br>
+
+            <!-- selecciona opcion lista -->
+            <label>PROGRAMAS TECNICOS</label>
+            <option value="">Seleccione programas</option>
+            <option value="">sistema</option>
+            <option value="">Diseño grafico</option>
+            <option value="">Contabilidad</option>
+        </section>
+        <br>
+        <br>
+        <label>Tu comentario</label>
+            <textarea name="mensaje" rows="5"cols="40"></textarea>
+    </fieldset>
+    <br><br>
+    <!-- seccion de botones formulario submit: envia datos cancel borrar datos ingresados -->
+    <button type="submit">Envia</button>
+    <button type="reset">Cancelar</button>
+    <br>
+    <br>
+</form>
+</selction>
+<!-- seccion de pie de pagina -->
+<footer>
+    Derechos reservados &copy;2022 &#64; Leandro V.
+</footer>
+</body>
+</html>
+

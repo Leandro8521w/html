@@ -1,0 +1,108 @@
+<html>
+    <body>
+        <h1>TABLA DE DATOS</h1>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CODIGO</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>DOCIDEN</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>10</th>
+                        <th>Leandro</th>
+                        <th>Valderrama</th>
+                        <th>1077429964</th>
+                    </tr>
+                    <tr>
+                        <th>20</th>
+                        <th>Pepe</th>
+                        <th>Toro</th>
+                        <th>88886745</th>
+                    </tr>
+                    <tr>
+                        <th>30</th>
+                        <th>Luis</th>
+                        <th>Peña</th>
+                        <th>44440934</th>
+                    </tr>
+                    <tr>
+                        <th>40</th>
+                        <th>Sofia</th>
+                        <th>Ruiz</th>
+                        <th>33332560</th>
+                    </tr>
+                    </tbody>
+                    </table>
+        </center>
+        <style>
+            html {
+                text-align: center;
+                height: 100%;
+            }
+            thead {
+                border: solid 6px red;
+                background-color: black;
+                color: white;
+            }
+            thead tr th {
+                padding: 15px;
+            }
+            tbody {
+                border: solid;
+                background-color: aliceblue;
+                color: black;
+            }
+        </style>
+    </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1>FORMULARIO CONTACTO</h1>
+    <form method="post" action="datosenvia.php">
+        <label>Nombre completo</label><br>
+        <input type="text" size="30"
+        title="Ingresa tu nombre completo" name="nombre" autofocus required/> <br>
+
+        <label>Correo electronico:</label> <br>
+        <input type="email" placeholder="Ingrese email:usuario@domino.com" size="40" title="escriba su email" name="mail"required/> <br>
+
+        <label>Fecha de nacimiento:</label> <br>
+        <input type="date" name="fechanac" title="Ingrese fecha de nacimiento"/> <br>
+        <br>
+        <label>Deslice barra y coloque grado de satisfaccion de servicio</label> <br>
+
+        <input type="range" min="1" max="10" title="deslice barra para ingresar grados de satisfacion" name="barra"/>
+        <br>
+
+        <label>seleccione color preferido</label>
+        <br>
+        <input type="color" value="#FFFF00" title="seleccione su color preferido" name="color"/>
+        <br>
+        <label>coloce su edad</label> <br>
+        <input type="number" min="1" max="120" title="Ingresa tu edad" name="edad"/>
+        <br>
+        <br>
+        <label>Seleccione archivo:</label><br>
+        <input type="file" name="archivo"   />
+        <br><br><br>
+        <input type="submit" value="enviar"/>
+    </form>
+</body>
+</html>
